@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".InsertActivity">
+    <TextView
+        android:id="@+id/tvNama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvNama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name : "
+        android:layout_below="@id/tvNama1"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email : "
+        android:layout_below="@id/tvNama2"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtNama1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="First Nama"
+        android:layout_toRightOf="@+id/tvNama1"
+        android:layout_alignBaseline="@+id/tvNama1"/>
+    <EditText
+        android:id="@+id/edtNama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:layout_toRightOf="@+id/tvNama2"
+        android:layout_alignBaseline="@+id/tvNama2"/>
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_toRightOf="@+id/tvEmail"
+        android:layout_alignBaseline="@+id/tvEmail"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <Button
+            android:id="@+id/btInserting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            />
+        <Button
+            android:id="@+id/btBackGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
